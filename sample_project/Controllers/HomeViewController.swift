@@ -24,8 +24,8 @@ class HomeViewController: UIViewController {
     @IBAction func tapMeButtonClicked(_ sender: Any) {
         print("TapMe button clicked")
         let storybard = UIStoryboard(name: "Main", bundle: nil)
-        let aboutViewController = storybard.instantiateViewController(withIdentifier: "aboutVC")
-        present(aboutViewController, animated: true) {
+        let sampleVC = storybard.instantiateViewController(withIdentifier: "SampleTableViewController")
+        present(sampleVC, animated: true) {
             print("This is called after the viewController is presented")
         }
     }

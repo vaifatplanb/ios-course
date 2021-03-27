@@ -180,6 +180,25 @@
             </objects>
             <point key="canvasLocation" x="950.46728971962614" y="115.33477321814256"/>
         </scene>
+        <!--Sample Table View Controller-->
+        <scene sceneID="OjZ-xZ-w2R">
+            <objects>
+                <tableViewController storyboardIdentifier="SampleTableViewController" id="fK2-Wo-nKB" customClass="SampleTableViewController" customModule="sample_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Whp-ed-SD7">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="fK2-Wo-nKB" id="KHs-5w-W2o"/>
+                            <outlet property="delegate" destination="fK2-Wo-nKB" id="gCQ-OH-Tya"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K1e-5f-8Wp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1678.0373831775701" y="115.98272138228943"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ios14" width="1400" height="1400"/>
