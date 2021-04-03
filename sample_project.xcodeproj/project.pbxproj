@@ -15,6 +15,12 @@
 		E82CDDA1260ED0D7002BC824 /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82CDDA0260ED0D7002BC824 /* SampleTableViewController.swift */; };
 		E82CDDA5260ED93C002BC824 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82CDDA4260ED93C002BC824 /* NewsTableViewCell.swift */; };
 		E82CDDA9260EDB47002BC824 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E82CDDA8260EDB47002BC824 /* NewsTableViewCell.xib */; };
+		E860E93826180CF100440B56 /* SampleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860E93726180CF100440B56 /* SampleCollectionViewController.swift */; };
+		E860E93D26180EB900440B56 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860E93B26180EB900440B56 /* CustomCollectionViewCell.swift */; };
+		E860E93E26180EB900440B56 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E860E93C26180EB900440B56 /* CustomCollectionViewCell.xib */; };
+		E860E944261818E600440B56 /* CustomHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860E942261818E600440B56 /* CustomHeaderCollectionReusableView.swift */; };
+		E860E945261818E600440B56 /* CustomHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E860E943261818E600440B56 /* CustomHeaderCollectionReusableView.xib */; };
+		E860E94826181FCC00440B56 /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860E94726181FCC00440B56 /* CustomCollectionViewController.swift */; };
 		E8C0CAB22606E3DC003A68DC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0CAB12606E3DC003A68DC /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +35,12 @@
 		E82CDDA0260ED0D7002BC824 /* SampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
 		E82CDDA4260ED93C002BC824 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		E82CDDA8260EDB47002BC824 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		E860E93726180CF100440B56 /* SampleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCollectionViewController.swift; sourceTree = "<group>"; };
+		E860E93B26180EB900440B56 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		E860E93C26180EB900440B56 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		E860E942261818E600440B56 /* CustomHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		E860E943261818E600440B56 /* CustomHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		E860E94726181FCC00440B56 /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
 		E8C0CAB12606E3DC003A68DC /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,10 +102,14 @@
 		E81AFEFF25F46FDA003DF914 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E860E941261818B800440B56 /* CollectionView ReusableViews */,
+				E860E93A26180E7D00440B56 /* CollectionView Cells */,
 				E82CDDA3260ED90C002BC824 /* TableView Cells */,
 				E81AFF0D25F476DD003DF914 /* HomeViewController.swift */,
 				E8C0CAB12606E3DC003A68DC /* AboutViewController.swift */,
 				E82CDDA0260ED0D7002BC824 /* SampleTableViewController.swift */,
+				E860E93726180CF100440B56 /* SampleCollectionViewController.swift */,
+				E860E94726181FCC00440B56 /* CustomCollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,6 +130,24 @@
 				E82CDDA8260EDB47002BC824 /* NewsTableViewCell.xib */,
 			);
 			path = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		E860E93A26180E7D00440B56 /* CollectionView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E860E93B26180EB900440B56 /* CustomCollectionViewCell.swift */,
+				E860E93C26180EB900440B56 /* CustomCollectionViewCell.xib */,
+			);
+			path = "CollectionView Cells";
+			sourceTree = "<group>";
+		};
+		E860E941261818B800440B56 /* CollectionView ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				E860E942261818E600440B56 /* CustomHeaderCollectionReusableView.swift */,
+				E860E943261818E600440B56 /* CustomHeaderCollectionReusableView.xib */,
+			);
+			path = "CollectionView ReusableViews";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +210,9 @@
 				E81AFF0625F4755F003DF914 /* Main.storyboard in Resources */,
 				E81AFEF425F46AF7003DF914 /* LaunchScreen.storyboard in Resources */,
 				E82CDDA9260EDB47002BC824 /* NewsTableViewCell.xib in Resources */,
+				E860E93E26180EB900440B56 /* CustomCollectionViewCell.xib in Resources */,
 				E81AFEF125F46AF7003DF914 /* Assets.xcassets in Resources */,
+				E860E945261818E600440B56 /* CustomHeaderCollectionReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,9 +224,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8C0CAB22606E3DC003A68DC /* AboutViewController.swift in Sources */,
+				E860E944261818E600440B56 /* CustomHeaderCollectionReusableView.swift in Sources */,
+				E860E93D26180EB900440B56 /* CustomCollectionViewCell.swift in Sources */,
 				E81AFEE825F46AF5003DF914 /* AppDelegate.swift in Sources */,
 				E82CDDA5260ED93C002BC824 /* NewsTableViewCell.swift in Sources */,
+				E860E94826181FCC00440B56 /* CustomCollectionViewController.swift in Sources */,
 				E81AFF0E25F476DD003DF914 /* HomeViewController.swift in Sources */,
+				E860E93826180CF100440B56 /* SampleCollectionViewController.swift in Sources */,
 				E82CDDA1260ED0D7002BC824 /* SampleTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

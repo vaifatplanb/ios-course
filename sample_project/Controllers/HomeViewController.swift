@@ -24,7 +24,8 @@ class HomeViewController: UIViewController {
     @IBAction func tapMeButtonClicked(_ sender: Any) {
         print("TapMe button clicked")
         let storybard = UIStoryboard(name: "Main", bundle: nil)
-        let sampleVC = storybard.instantiateViewController(withIdentifier: "SampleTableViewController")
+        let sampleVC = storybard.instantiateViewController(withIdentifier: "CustomCollectionViewController")
+        sampleVC.modalPresentationStyle = .fullScreen
         present(sampleVC, animated: true) {
             print("This is called after the viewController is presented")
         }
