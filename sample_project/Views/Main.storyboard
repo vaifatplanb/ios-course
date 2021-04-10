@@ -63,14 +63,32 @@
                                     <action selector="tapMeButtonClicked:" destination="DuR-YR-ehr" eventType="touchUpInside" id="NNR-S1-J5p"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95e-Wz-jEp">
+                                <rect key="frame" x="284" y="351" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.5033683524" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="DuR-YR-ehr" eventType="touchUpInside" id="TbT-IP-NWk"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please input age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrV-w2-Sfr">
+                                <rect key="frame" x="127" y="349" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YWb-zL-f8z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="ageTextField" destination="hrV-w2-Sfr" id="tKd-nl-NGj"/>
                         <outlet property="headerLabel" destination="f6T-tT-FSM" id="gmk-01-JwA"/>
                         <outlet property="indicatorView" destination="Tzp-J5-kjg" id="HMN-aW-9BX"/>
-                        <outlet property="nameTextField" destination="NKS-2z-oKy" id="7OZ-NL-U9w"/>
+                        <outlet property="nameTextField" destination="NKS-2z-oKy" id="aMR-ud-OWA"/>
                         <outlet property="tapMeButton" destination="Ozy-h1-W5r" id="ToV-oN-Iz8"/>
                     </connections>
                 </viewController>

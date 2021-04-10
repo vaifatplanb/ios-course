@@ -6,18 +6,45 @@
 //
 
 import UIKit
+import KeychainSwift
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tapMeButton: UIButton!
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
+    @IBOutlet weak var ageTextField: UITextField!
+    
+    let userDefault = UserDefaults()
+    let keychain = KeychainSwift()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Label
         headerLabel.text = "Fetched Data from Internet"
+//        if let textFromUserDefault = userDefault.string(forKey: UserDefaultKeys.age.value) {
+//            headerLabel.text = textFromUserDefault
+//        }
+        
+        if let textFromKeychain = keychain.get(KeychainKeys.age.value) {
+            headerLabel.text = textFromKeychain
+        }
         nameTextField.placeholder = "Input name here"
+    }
+    @IBAction func saveButtonClicked(_ sender: Any) {
+        guard let text = ageTextField.text else { return }
+        // Save content in ageTextField to UserDefaults
+//        userDefault.set(text, forKey: UserDefaultKeys.age.value)
+//        if let textFromUserDefault = userDefault.string(forKey: UserDefaultKeys.age.value) {
+//            headerLabel.text = textFromUserDefault
+//        }
+        
+        // Store content in ageTextField to Keychain
+        keychain.set(text, forKey: KeychainKeys.age.value)
+        
+        if let textFromKeychain = keychain.get(KeychainKeys.age.value) {
+            headerLabel.text = textFromKeychain
+        }
     }
     
     // Touch up inside
