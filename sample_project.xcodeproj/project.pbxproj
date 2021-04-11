@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		E860E944261818E600440B56 /* CustomHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860E942261818E600440B56 /* CustomHeaderCollectionReusableView.swift */; };
 		E860E945261818E600440B56 /* CustomHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E860E943261818E600440B56 /* CustomHeaderCollectionReusableView.xib */; };
 		E860E94826181FCC00440B56 /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860E94726181FCC00440B56 /* CustomCollectionViewController.swift */; };
+		E8B2553F262294F4002DB733 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B2553E262294F4002DB733 /* TodoItem.swift */; };
 		E8C0CAB22606E3DC003A68DC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0CAB12606E3DC003A68DC /* AboutViewController.swift */; };
 		E8DA12532621494C0080E07D /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA12522621494C0080E07D /* Enum.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 		E860E942261818E600440B56 /* CustomHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		E860E943261818E600440B56 /* CustomHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		E860E94726181FCC00440B56 /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
+		E8B2553E262294F4002DB733 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		E8C0CAB12606E3DC003A68DC /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		E8DA12522621494C0080E07D /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 			children = (
 				E81AFEE725F46AF5003DF914 /* AppDelegate.swift */,
 				E81AFEF525F46AF7003DF914 /* Info.plist */,
+				E8B2553D2622945F002DB733 /* Service */,
 				E81AFF0125F4701E003DF914 /* Resource */,
 				E81AFEFD25F46FC5003DF914 /* Models */,
 				E81AFEFE25F46FD5003DF914 /* Views */,
@@ -114,6 +117,7 @@
 		E81AFEFD25F46FC5003DF914 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E8B2553E262294F4002DB733 /* TodoItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +179,13 @@
 				E860E943261818E600440B56 /* CustomHeaderCollectionReusableView.xib */,
 			);
 			path = "CollectionView ReusableViews";
+			sourceTree = "<group>";
+		};
+		E8B2553D2622945F002DB733 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +310,7 @@
 				E860E93D26180EB900440B56 /* CustomCollectionViewCell.swift in Sources */,
 				E81AFEE825F46AF5003DF914 /* AppDelegate.swift in Sources */,
 				E82CDDA5260ED93C002BC824 /* NewsTableViewCell.swift in Sources */,
+				E8B2553F262294F4002DB733 /* TodoItem.swift in Sources */,
 				E860E94826181FCC00440B56 /* CustomCollectionViewController.swift in Sources */,
 				E81AFF0E25F476DD003DF914 /* HomeViewController.swift in Sources */,
 				E860E93826180CF100440B56 /* SampleCollectionViewController.swift in Sources */,
