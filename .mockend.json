@@ -2,12 +2,7 @@
   "Post": {
     "title": "string",
     "price": "int",
-    "published": "boolean",
-    "createdAt": "date",
-    "comments": "Comment[]"
-  },
-  "Comment": {
-    "body": "string",
-    "post": "Post"
+    "onSale": "boolean",
+    "year": "2021"
   }
 }
