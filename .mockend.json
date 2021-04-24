@@ -1,5 +1,5 @@
 {
-  "Post": {
+  "Book": {
     "title": "string",
     "price": "int",
     "onSale": "boolean"
