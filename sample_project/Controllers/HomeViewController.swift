@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     @IBOutlet weak var ageTextField: UITextField!
+    @IBOutlet weak var environmentName: UILabel!
     
     let userDefault = UserDefaults()
     let keychain = KeychainSwift()
@@ -30,7 +31,10 @@ class HomeViewController: UIViewController {
             headerLabel.text = textFromKeychain
         }
         nameTextField.placeholder = "Input name here"
+        
+        environmentName.text = Configuration.environment.baseURL
     }
+    
     @IBAction func saveButtonClicked(_ sender: Any) {
         guard let text = ageTextField.text else { return }
         // Save content in ageTextField to UserDefaults

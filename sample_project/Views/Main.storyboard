@@ -13,7 +13,7 @@
         <!--Home View Controller-->
         <scene sceneID="mCE-ut-v6G">
             <objects>
-                <viewController id="DuR-YR-ehr" customClass="HomeViewController" customModule="sample_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DuR-YR-ehr" customClass="HomeViewController" customModule="Sam_Dev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dvP-K7-6F4">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,12 +80,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrS-y5-dbj">
+                                <rect key="frame" x="123" y="187" width="182" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YWb-zL-f8z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="ageTextField" destination="hrV-w2-Sfr" id="tKd-nl-NGj"/>
+                        <outlet property="environmentName" destination="nrS-y5-dbj" id="iHn-pg-m3L"/>
                         <outlet property="headerLabel" destination="f6T-tT-FSM" id="gmk-01-JwA"/>
                         <outlet property="indicatorView" destination="Tzp-J5-kjg" id="HMN-aW-9BX"/>
                         <outlet property="nameTextField" destination="NKS-2z-oKy" id="aMR-ud-OWA"/>
@@ -99,7 +107,7 @@
         <!--About View Controller-->
         <scene sceneID="Cd1-fB-QO9">
             <objects>
-                <viewController storyboardIdentifier="aboutVC" id="MsY-sY-kUY" customClass="AboutViewController" customModule="sample_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="aboutVC" id="MsY-sY-kUY" customClass="AboutViewController" customModule="Sam_Dev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F96-28-Dbj">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +210,7 @@
         <!--Sample Table View Controller-->
         <scene sceneID="OjZ-xZ-w2R">
             <objects>
-                <tableViewController storyboardIdentifier="SampleTableViewController" id="fK2-Wo-nKB" customClass="SampleTableViewController" customModule="sample_project" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SampleTableViewController" id="fK2-Wo-nKB" customClass="SampleTableViewController" customModule="Sam_Dev" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Whp-ed-SD7">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,7 +229,7 @@
         <!--Sample Collection View Controller-->
         <scene sceneID="HUR-Rj-Rl2">
             <objects>
-                <collectionViewController storyboardIdentifier="SampleCollectionViewController" id="NIQ-Wg-GjV" customClass="SampleCollectionViewController" customModule="sample_project" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="SampleCollectionViewController" id="NIQ-Wg-GjV" customClass="SampleCollectionViewController" customModule="Sam_Dev" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7MN-g0-aTM">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,7 +263,7 @@
         <!--Custom Collection View Controller-->
         <scene sceneID="phw-lC-I82">
             <objects>
-                <viewController storyboardIdentifier="CustomCollectionViewController" id="WZY-x4-3Cb" customClass="CustomCollectionViewController" customModule="sample_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomCollectionViewController" id="WZY-x4-3Cb" customClass="CustomCollectionViewController" customModule="Sam_Dev" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ni-B5-ruW">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

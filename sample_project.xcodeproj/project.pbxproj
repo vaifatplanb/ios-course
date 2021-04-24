@@ -22,6 +22,7 @@
 		E860E944261818E600440B56 /* CustomHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860E942261818E600440B56 /* CustomHeaderCollectionReusableView.swift */; };
 		E860E945261818E600440B56 /* CustomHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E860E943261818E600440B56 /* CustomHeaderCollectionReusableView.xib */; };
 		E860E94826181FCC00440B56 /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860E94726181FCC00440B56 /* CustomCollectionViewController.swift */; };
+		E882B4E0262A8DBA00C38260 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E882B4DF262A8DBA00C38260 /* Configuration.swift */; };
 		E8B2553F262294F4002DB733 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B2553E262294F4002DB733 /* TodoItem.swift */; };
 		E8C0CAB22606E3DC003A68DC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C0CAB12606E3DC003A68DC /* AboutViewController.swift */; };
 		E8DA12532621494C0080E07D /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA12522621494C0080E07D /* Enum.swift */; };
@@ -31,7 +32,7 @@
 		7721A4B53F40F9AD97B5629D /* Pods-sample_project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample_project.debug.xcconfig"; path = "Target Support Files/Pods-sample_project/Pods-sample_project.debug.xcconfig"; sourceTree = "<group>"; };
 		81C5BEACE10F3A48B5066F11 /* Pods_sample_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sample_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61EC8CEEAEEA0BB4C351EC7 /* Pods-sample_project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sample_project.release.xcconfig"; path = "Target Support Files/Pods-sample_project/Pods-sample_project.release.xcconfig"; sourceTree = "<group>"; };
-		E81AFEE425F46AF5003DF914 /* sample_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81AFEE425F46AF5003DF914 /* Sam-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sam-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81AFEE725F46AF5003DF914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E81AFEF025F46AF7003DF914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E81AFEF325F46AF7003DF914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		E860E942261818E600440B56 /* CustomHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		E860E943261818E600440B56 /* CustomHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		E860E94726181FCC00440B56 /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
+		E882B4DF262A8DBA00C38260 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		E8B2553E262294F4002DB733 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		E8C0CAB12606E3DC003A68DC /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		E8DA12522621494C0080E07D /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
@@ -94,7 +96,7 @@
 		E81AFEE525F46AF5003DF914 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E81AFEE425F46AF5003DF914 /* sample_project.app */,
+				E81AFEE425F46AF5003DF914 /* Sam-Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +112,7 @@
 				E81AFEFE25F46FD5003DF914 /* Views */,
 				E81AFEFF25F46FDA003DF914 /* Controllers */,
 				E8DA12522621494C0080E07D /* Enum.swift */,
+				E882B4DF262A8DBA00C38260 /* Configuration.swift */,
 			);
 			path = sample_project;
 			sourceTree = "<group>";
@@ -207,7 +210,7 @@
 			);
 			name = sample_project;
 			productName = sample_project;
-			productReference = E81AFEE425F46AF5003DF914 /* sample_project.app */;
+			productReference = E81AFEE425F46AF5003DF914 /* Sam-Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -311,6 +314,7 @@
 				E81AFEE825F46AF5003DF914 /* AppDelegate.swift in Sources */,
 				E82CDDA5260ED93C002BC824 /* NewsTableViewCell.swift in Sources */,
 				E8B2553F262294F4002DB733 /* TodoItem.swift in Sources */,
+				E882B4E0262A8DBA00C38260 /* Configuration.swift in Sources */,
 				E860E94826181FCC00440B56 /* CustomCollectionViewController.swift in Sources */,
 				E81AFF0E25F476DD003DF914 /* HomeViewController.swift in Sources */,
 				E860E93826180CF100440B56 /* SampleCollectionViewController.swift in Sources */,
@@ -464,8 +468,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.test.course.sample-project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.course.sample-project.dev";
+				PRODUCT_NAME = "Sam-Dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -487,7 +491,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.course.sample-project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sam-Prod";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
