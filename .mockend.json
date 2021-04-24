@@ -2,7 +2,6 @@
   "Post": {
     "title": "string",
     "price": "int",
-    "onSale": "boolean",
-    "year": "2021"
+    "onSale": "boolean"
   }
 }
