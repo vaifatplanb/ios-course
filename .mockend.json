@@ -1,5 +1,6 @@
 {
   "Book": {
+    "id": "int",
     "title": "string",
     "price": "int",
     "author": "string",
