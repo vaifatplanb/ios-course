@@ -2,6 +2,8 @@
   "Book": {
     "title": "string",
     "price": "int",
-    "onSale": "boolean"
+    "author": "string",
+    "desc": "string",
+    "ISBN": "string"
   }
 }
